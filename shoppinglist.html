@@ -18,7 +18,7 @@
             var app = angular.module("ShoppingList", []);
             app.controller("ListController", function($scope) {
                 $scope.addItem = function() {
-                    console.log('about to add item to our list');
+                    console.log('about to add ' + $scope.itemToAdd + ' to our list');
                 }
             });
         </script>
