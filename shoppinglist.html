@@ -5,12 +5,6 @@
     <meta charset="utf-8">
     <title>Shopping List</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <script>
-        var app = angular.module("ShoppingList", []);
-        app.controller("ListController", function() {
-            console.log('in our controller');
-        });
-    </script>
 </head>
 
 <body>
@@ -20,6 +14,14 @@
             <input type="text" placeholder="item to add" ng-model="itemToAdd">
             <input type="submit" value="add">
         </form>
+        <script>
+            var app = angular.module("ShoppingList", []);
+            app.controller("ListController", function($scope) {
+                $scope.addItem = function() {
+                    console.log('about to add item to our list');
+                }
+            });
+        </script>
     </div>
 </body>
 
