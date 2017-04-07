@@ -5,10 +5,16 @@
     <meta charset="utf-8">
     <title>Shopping List</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script>
+        var app = angular.module("ShoppingList", []);
+        app.controller("ListController", function() {
+            console.log('in our controller');
+        });
+    </script>
 </head>
 
 <body>
-    <div ng-app="">
+    <div ng-app="ShoppingList">
         <h1>Shopping List</h1>
         <form ng-submit="addItem()">
             <input type="text" placeholder="item to add" ng-model="itemToAdd">
