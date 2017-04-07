@@ -10,8 +10,9 @@
 <body>
     <div ng-app="">
         <h1>Shopping List</h1>
-        <form>
-            <input type="text" placeholder="item to add" ng-model="itemToAdd"> {{itemToAdd}}
+        <form ng-submit="addItem()">
+            <input type="text" placeholder="item to add" ng-model="itemToAdd">
+            <input type="submit" value="add">
         </form>
     </div>
 </body>
