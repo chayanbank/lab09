@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <div ng-app="ShoppingList">
+    <div ng-app="ShoppingList" ng-controller="ListController">
         <h1>Shopping List</h1>
         <form ng-submit="addItem()">
             <input type="text" placeholder="item to add" ng-model="itemToAdd">
